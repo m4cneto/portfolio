@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manoel Neto | Senior Analytics Engineer</title>
+  <meta name="description" content="Portfólio de Manoel Neto – Senior Analytics Engineer especializado em Databricks, Data Lakehouse, PySpark e Analytics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">MN<span class="dot">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#contato" class="nav-cta">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-eyebrow"><span class="pulse-dot"></span> Disponível para projetos</p>
+        <h1 class="hero-name">Manoel <span class="gradient-text">Neto</span></h1>
+        <h2 class="hero-title">Senior Analytics Engineer</h2>
+        <p class="hero-subtitle">Data Lakehouse &amp; Databricks Specialist</p>
+        <p class="hero-desc">Construo camadas analíticas escaláveis (Silver/Gold), modelos de dados e pipelines em ambientes Data Lake/Lakehouse para transformar dados em decisões estratégicas com confiabilidade e performance.</p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary"><i class="fas fa-rocket"></i> Ver Projetos</a>
+          <a href="https://linkedin.com/in/m4cneto" target="_blank" class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <i class="fas fa-bolt stat-icon"></i>
+            <p>~50% redução no tempo de processamento de dados</p>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-layer-group stat-icon"></i>
+            <p>+40 relatórios migrados para arquitetura moderna (Databricks + Power BI)</p>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-chart-line stat-icon"></i>
+            <p>Aumento da confiabilidade e precisão dos KPIs estratégicos</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="pipeline-card">
+          <div class="pipeline-header">
+            <span class="pipeline-dot red"></span>
+            <span class="pipeline-dot yellow"></span>
+            <span class="pipeline-dot green"></span>
+            <span class="pipeline-title">data_pipeline.py</span>
+          </div>
+          <div class="pipeline-body">
+            <div class="code-line"><span class="kw">from</span> <span class="mod">pyspark.sql</span> <span class="kw">import</span> SparkSession</div>
+            <div class="code-line mt-1"><span class="fn">spark</span> = SparkSession.builder \</div>
+            <div class="code-line indent"><span class="str">.appName</span>(<span class="val">"DataLakehouse"</span>) \</div>
+            <div class="code-line indent"><span class="str">.getOrCreate</span>()</div>
+            <div class="code-line mt-1"><span class="com"># Bronze → Silver → Gold</span></div>
+            <div class="code-line"><span class="fn">df_silver</span> = bronze_df \</div>
+            <div class="code-line indent"><span class="str">.filter</span>(col(<span class="val">"is_valid"</span>)) \</div>
+            <div class="code-line indent"><span class="str">.withColumn</span>(<span class="val">"dt_process"</span>, <span class="fn">current_date</span>())</div>
+            <div class="code-line mt-1"><span class="fn">df_silver</span>.write \</div>
+            <div class="code-line indent"><span class="str">.format</span>(<span class="val">"delta"</span>) \</div>
+            <div class="code-line indent"><span class="str">.mode</span>(<span class="val">"overwrite"</span>) \</div>
+            <div class="code-line indent"><span class="str">.saveAsTable</span>(<span class="val">"silver.analytics"</span>)</div>
+          </div>
+          <div class="pipeline-badges">
+            <span class="badge">Delta Lake</span>
+            <span class="badge">Databricks</span>
+            <span class="badge">PySpark</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 / Sobre</span>
+        <h2 class="section-title">Sobre <span class="gradient-text">Mim</span></h2>
+      </div>
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p>Sou um <strong>Senior Data Analytics Engineer</strong> com forte atuação na construção de camadas analíticas (Silver/Gold), modelagem de dados e pipelines em ambientes Data Lake/Lakehouse.</p>
+          <p>Trabalho próximo ao negócio, com foco em <strong>confiabilidade, performance e governança de dados</strong> — garantindo que os dados representem corretamente a realidade e suportem decisões estratégicas.</p>
+          <p>Minha trajetória combina domínio técnico em engenharia de dados com visão de produto e negócio, tendo atuado em setores como <strong>varejo, fintech, turismo e marketing digital</strong>.</p>
+          <div class="info-chips">
+            <span class="chip"><i class="fas fa-map-marker-alt"></i> Brasil</span>
+            <span class="chip"><i class="fas fa-language"></i> PT-BR Nativo · EN Full Professional</span>
+            <span class="chip"><i class="fas fa-briefcase"></i> Aberto a oportunidades</span>
+          </div>
+        </div>
+        <div class="sobre-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fas fa-tachometer-alt"></i></div>
+            <div>
+              <h4>~50% de redução</h4>
+              <p>no tempo de processamento e carregamento de dados</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fas fa-database"></i></div>
+            <div>
+              <h4>+40 relatórios migrados</h4>
+              <p>de ambientes legados para Databricks + Power BI</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+            <div>
+              <h4>Pipelines otimizados</h4>
+              <p>datasets analíticos com ganho de performance e escalabilidade</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section id="experiencia" class="section experiencia">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Experiência</span>
+        <h2 class="section-title">Trajetória <span class="gradient-text">Profissional</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="marker-dot current"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="exp-card current-job">
+            <div class="exp-header">
+              <div class="exp-company-info">
+                <div class="exp-logo allos"><i class="fas fa-store"></i></div>
+                <div>
+                  <h3>ALLOS</h3>
+                  <span class="exp-role">Senior Analytics Engineer</span>
+                </div>
+              </div>
+              <span class="exp-period">Mai 2025 – Abr 2026</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Principal Analytics Engineer no contexto de <strong>Retail Media</strong></li>
+              <li>Construção e evolução da camada analítica <strong>(Silver → Gold)</strong> no Databricks</li>
+              <li>Modelagem de dados orientada à tomada de decisão estratégica</li>
+              <li>Desenvolvimento de pipelines com <strong>SparkSQL / PySpark</strong> e orquestração via Airflow</li>
+              <li>Versionamento com GitLab e documentação de tabelas analíticas com metadados/YAML</li>
+            </ul>
+            <div class="exp-results">
+              <span class="result-tag"><i class="fas fa-arrow-down"></i> ~50% processamento</span>
+              <span class="result-tag"><i class="fas fa-check-circle"></i> KPIs confiáveis</span>
+              <span class="result-tag"><i class="fas fa-bolt"></i> Performance otimizada</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div class="exp-company-info">
+                <div class="exp-logo dock"><i class="fas fa-credit-card"></i></div>
+                <div>
+                  <h3>Dock</h3>
+                  <span class="exp-role">Data Analytics Engineer II</span>
+                </div>
+              </div>
+              <span class="exp-period">Set 2023 – Mai 2025</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Liderança na <strong>migração de relatórios legados</strong> para Data Lake (Databricks)</li>
+              <li>Desenvolvimento de pipelines <strong>ETL/ELT</strong> e datasets analíticos na camada Gold</li>
+              <li>Atuação em cenários <strong>regulatórios (banking e adquirência)</strong></li>
+              <li>Otimização de queries e jobs em SQL Server e PostgreSQL</li>
+              <li>Disseminação de boas práticas de modelagem de dados</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div class="exp-company-info">
+                <div class="exp-logo cvc"><i class="fas fa-plane"></i></div>
+                <div>
+                  <h3>CVC Corp</h3>
+                  <span class="exp-role">Data Science Analytics Pleno</span>
+                </div>
+              </div>
+              <span class="exp-period">Abr 2023 – Jul 2023</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Migração de BI operacional para <strong>Data Lake</strong></li>
+              <li>Desenvolvimento de tabelas/views no Databricks (SQL / SparkSQL)</li>
+              <li>Documentação técnica e padronização de fluxos de dados</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div class="exp-company-info">
+                <div class="exp-logo v4"><i class="fas fa-chart-bar"></i></div>
+                <div>
+                  <h3>V4 Company</h3>
+                  <span class="exp-role">Analytics Engineer / Analista de Dados</span>
+                </div>
+              </div>
+              <span class="exp-period">Anterior</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Coleta de dados via <strong>APIs</strong> e ingestão em AWS</li>
+              <li>Criação de views e endpoints em Python</li>
+              <li>Desenvolvimento de dashboards em <strong>Power BI</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="marker-dot small"></div>
+          </div>
+          <div class="exp-card exp-card-summary">
+            <div class="exp-summary-icon"><i class="fas fa-history"></i></div>
+            <div>
+              <h4>Experiências Anteriores</h4>
+              <p>Telemont, Endicon e outras — trajetória sólida em <strong>dashboards, Power BI, KPIs, ETL e governança de dados</strong>, mostrando evolução constante até engenharia de dados.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Skills</span>
+        <h2 class="section-title">Stack <span class="gradient-text">Técnica</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-database"></i>
+            <h3>Data Engineering / Analytics</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip primary">Databricks</span>
+            <span class="skill-chip primary">PySpark</span>
+            <span class="skill-chip primary">SparkSQL</span>
+            <span class="skill-chip">Data Lake / Lakehouse</span>
+            <span class="skill-chip">Modelagem Silver / Gold</span>
+            <span class="skill-chip">ETL / ELT</span>
+            <span class="skill-chip">Airflow</span>
+            <span class="skill-chip">Delta Lake</span>
+            <span class="skill-chip">Git / GitLab</span>
+            <span class="skill-chip">Metadados / YAML</span>
+            <span class="skill-chip">Governança de Dados</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-code"></i>
+            <h3>Linguagens &amp; Bancos de Dados</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip primary">SQL</span>
+            <span class="skill-chip primary">Python</span>
+            <span class="skill-chip">SQL Server</span>
+            <span class="skill-chip">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-chart-pie"></i>
+            <h3>BI &amp; Visualização</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip primary">Power BI</span>
+            <span class="skill-chip">DAX</span>
+            <span class="skill-chip">Power Query</span>
+            <span class="skill-chip">Power BI Service</span>
+            <span class="skill-chip">Metabase</span>
+            <span class="skill-chip">QuickSight</span>
+            <span class="skill-chip">SSRS</span>
+            <span class="skill-chip">SSIS</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud &amp; Infra</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip primary">AWS</span>
+            <span class="skill-chip">S3</span>
+            <span class="skill-chip">Data Lake AWS</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-globe"></i>
+            <h3>Idiomas</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip primary">Português (Nativo)</span>
+            <span class="skill-chip">Inglês (Full Professional)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="section projetos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 / Projetos</span>
+        <h2 class="section-title">Projetos em <span class="gradient-text">Destaque</span></h2>
+      </div>
+      <div class="projetos-grid">
+
+        <div class="projeto-card featured">
+          <div class="projeto-badge">⭐ Destaque</div>
+          <div class="projeto-header">
+            <span class="projeto-emoji">📊</span>
+            <div class="projeto-meta">
+              <div class="projeto-tech-tags">
+                <span>PySpark</span><span>Delta Lake</span><span>Databricks</span><span>SparkSQL</span>
+              </div>
+            </div>
+          </div>
+          <h3>State of Data 2023 – Engenharia de Dados com Databricks</h3>
+          <p>Projeto de engenharia de dados aplicando boas práticas para estruturar e analisar os dados da pesquisa <strong>State of Data Brasil 2023</strong>, utilizando uma arquitetura em camadas (Bronze, Silver, Gold) no Databricks.</p>
+          <div class="projeto-layers">
+            <div class="layer bronze">
+              <span class="layer-label">🥉 Bronze</span>
+              <span>Leitura do CSV original no DBFS</span>
+            </div>
+            <div class="layer silver">
+              <span class="layer-label">🥈 Silver</span>
+              <span>Padronização, tipagem, remoção de nulos</span>
+            </div>
+            <div class="layer gold">
+              <span class="layer-label">🥇 Gold</span>
+              <span>Tabelas analíticas para insights específicos</span>
+            </div>
+          </div>
+          <div class="projeto-insights">
+            <h4>Análises na camada Gold:</h4>
+            <ul>
+              <li>Faixa salarial por experiência e nível</li>
+              <li>Salário por gênero e cor/raça</li>
+              <li>Relação entre nível de ensino e senioridade</li>
+              <li>Impacto de mudança de estado × salário</li>
+              <li>Discriminação na carreira (diversidade)</li>
+            </ul>
+          </div>
+          <div class="projeto-stats">
+            <span><i class="fas fa-users"></i> ~7.000 registros</span>
+            <span><i class="fab fa-kaggle"></i> Fonte: Kaggle</span>
+          </div>
+          <a href="https://github.com/m4cneto/state_of_data_2023" target="_blank" class="btn btn-primary btn-sm">
+            <i class="fab fa-github"></i> Ver no GitHub
+          </a>
+        </div>
+
+        <div class="projeto-card coming-soon">
+          <div class="projeto-placeholder">
+            <i class="fas fa-stream"></i>
+            <h4>Pipeline de Dados</h4>
+            <p>Em breve — case de ingestão e transformação em Data Lakehouse</p>
+          </div>
+        </div>
+
+        <div class="projeto-card coming-soon">
+          <div class="projeto-placeholder">
+            <i class="fas fa-chart-bar"></i>
+            <h4>Dashboard Power BI</h4>
+            <p>Em breve — relatório analítico com modelagem dimensional</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMAÇÃO -->
+  <section id="formacao" class="section formacao">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 / Formação</span>
+        <h2 class="section-title">Formação &amp; <span class="gradient-text">Certificações</span></h2>
+      </div>
+      <div class="formacao-grid">
+        <div class="formacao-col">
+          <h3 class="formacao-col-title"><i class="fas fa-graduation-cap"></i> Formação Acadêmica</h3>
+          <div class="edu-list">
+            <div class="edu-item">
+              <div class="edu-icon"><i class="fas fa-award"></i></div>
+              <div>
+                <h4>Pós-graduação em Ciência de Dados e Analytics</h4>
+                <span>PUC-Rio</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-icon"><i class="fas fa-award"></i></div>
+              <div>
+                <h4>MBA em Business Intelligence &amp; Analytics 360</h4>
+                <span>Xperiun | Data Analytics</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+              <div>
+                <h4>Especialização em Data Analytics | Data Engineering</h4>
+                <span>Alura</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+              <div>
+                <h4>Nanodegree em Data Engineering</h4>
+                <span>Udacity</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-icon"><i class="fas fa-university"></i></div>
+              <div>
+                <h4>Análise de Sistemas de Computação</h4>
+                <span>Faculdade Maurício de Nassau</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="formacao-col">
+          <h3 class="formacao-col-title"><i class="fas fa-medal"></i> Certificações</h3>
+          <div class="cert-list">
+            <div class="cert-item">
+              <i class="fas fa-certificate cert-icon"></i>
+              <span>Microsoft SQL Server Reporting Services (SSRS): 2022 Edition</span>
+            </div>
+            <div class="cert-item">
+              <i class="fas fa-certificate cert-icon"></i>
+              <span>Report Analysis com Power BI: Gerando Relatórios Empresariais</span>
+            </div>
+            <div class="cert-item">
+              <i class="fas fa-certificate cert-icon"></i>
+              <span>Engenharia de Dados: Organizando Dados na AWS</span>
+            </div>
+            <div class="cert-item">
+              <i class="fas fa-certificate cert-icon"></i>
+              <span>Python para Data Science: Funções, Pacotes e Pandas</span>
+            </div>
+            <div class="cert-item">
+              <i class="fas fa-certificate cert-icon"></i>
+              <span>Dashboard com Power BI: Construindo Relatórios</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section contato">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 / Contato</span>
+        <h2 class="section-title">Vamos <span class="gradient-text">Conversar?</span></h2>
+        <p class="section-desc">Estou disponível para projetos de engenharia de dados, modernização de ambientes legados e construção de camadas analíticas e BI.</p>
+      </div>
+      <div class="contato-grid">
+        <div class="contato-links">
+          <a href="mailto:m4cneto@gmail.com" class="contact-link">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div><strong>E-mail</strong><span>m4cneto@gmail.com</span></div>
+          </a>
+          <a href="https://linkedin.com/in/m4cneto" target="_blank" class="contact-link">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div><strong>LinkedIn</strong><span>linkedin.com/in/m4cneto</span></div>
+          </a>
+          <a href="https://github.com/m4cneto" target="_blank" class="contact-link">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div><strong>GitHub</strong><span>github.com/m4cneto</span></div>
+          </a>
+        </div>
+        <form class="contato-form" id="contactForm">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como posso ajudar?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Mensagem enviada! Obrigado pelo contato.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Manoel Neto · Senior Analytics Engineer · Feito com <span class="heart">♥</span> e muitos dados</p>
+      <p class="footer-sub">Databricks · PySpark · Delta Lake · Power BI</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
