@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manoel Neto | Senior Analytics Engineer</title>
-  <meta name="description" content="Portfólio de Manoel Neto – Senior Analytics Engineer especializado em Databricks, Data Lakehouse, PySpark e Analytics." />
+  <meta name="description"
+    content="Portfólio de Manoel Neto – Senior Analytics Engineer especializado em Databricks, Data Lakehouse, PySpark e Analytics." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <!-- NAV -->
   <nav id="navbar">
@@ -42,10 +47,13 @@
         <h1 class="hero-name">Manoel <span class="gradient-text">Neto</span></h1>
         <h2 class="hero-title">Senior Analytics Engineer</h2>
         <p class="hero-subtitle">Data Lakehouse &amp; Databricks Specialist</p>
-        <p class="hero-desc">Construo camadas analíticas escaláveis (Silver/Gold), modelos de dados e pipelines em ambientes Data Lake/Lakehouse para transformar dados em decisões estratégicas com confiabilidade e performance.</p>
+        <p class="hero-desc">Construo camadas analíticas escaláveis (Silver/Gold), modelos de dados e pipelines em
+          ambientes Data Lake/Lakehouse para transformar dados em decisões estratégicas com confiabilidade e
+          performance.</p>
         <div class="hero-actions">
           <a href="#projetos" class="btn btn-primary"><i class="fas fa-rocket"></i> Ver Projetos</a>
-          <a href="https://linkedin.com/in/m4cneto" target="_blank" class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://linkedin.com/in/m4cneto" target="_blank" class="btn btn-outline"><i
+              class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
         <div class="hero-stats">
           <div class="stat-card">
@@ -71,18 +79,23 @@
             <span class="pipeline-title">data_pipeline.py</span>
           </div>
           <div class="pipeline-body">
-            <div class="code-line"><span class="kw">from</span> <span class="mod">pyspark.sql</span> <span class="kw">import</span> SparkSession</div>
+            <div class="code-line"><span class="kw">from</span> <span class="mod">pyspark.sql</span> <span
+                class="kw">import</span> SparkSession</div>
             <div class="code-line mt-1"><span class="fn">spark</span> = SparkSession.builder \</div>
-            <div class="code-line indent"><span class="str">.appName</span>(<span class="val">"DataLakehouse"</span>) \</div>
+            <div class="code-line indent"><span class="str">.appName</span>(<span class="val">"DataLakehouse"</span>) \
+            </div>
             <div class="code-line indent"><span class="str">.getOrCreate</span>()</div>
             <div class="code-line mt-1"><span class="com"># Bronze → Silver → Gold</span></div>
             <div class="code-line"><span class="fn">df_silver</span> = bronze_df \</div>
-            <div class="code-line indent"><span class="str">.filter</span>(col(<span class="val">"is_valid"</span>)) \</div>
-            <div class="code-line indent"><span class="str">.withColumn</span>(<span class="val">"dt_process"</span>, <span class="fn">current_date</span>())</div>
+            <div class="code-line indent"><span class="str">.filter</span>(col(<span class="val">"is_valid"</span>)) \
+            </div>
+            <div class="code-line indent"><span class="str">.withColumn</span>(<span class="val">"dt_process"</span>,
+              <span class="fn">current_date</span>())</div>
             <div class="code-line mt-1"><span class="fn">df_silver</span>.write \</div>
             <div class="code-line indent"><span class="str">.format</span>(<span class="val">"delta"</span>) \</div>
             <div class="code-line indent"><span class="str">.mode</span>(<span class="val">"overwrite"</span>) \</div>
-            <div class="code-line indent"><span class="str">.saveAsTable</span>(<span class="val">"silver.analytics"</span>)</div>
+            <div class="code-line indent"><span class="str">.saveAsTable</span>(<span
+                class="val">"silver.analytics"</span>)</div>
           </div>
           <div class="pipeline-badges">
             <span class="badge">Delta Lake</span>
@@ -107,9 +120,12 @@
       </div>
       <div class="sobre-grid">
         <div class="sobre-text">
-          <p>Sou um <strong>Senior Data Analytics Engineer</strong> com forte atuação na construção de camadas analíticas (Silver/Gold), modelagem de dados e pipelines em ambientes Data Lake/Lakehouse.</p>
-          <p>Trabalho próximo ao negócio, com foco em <strong>confiabilidade, performance e governança de dados</strong> — garantindo que os dados representem corretamente a realidade e suportem decisões estratégicas.</p>
-          <p>Minha trajetória combina domínio técnico em engenharia de dados com visão de produto e negócio, tendo atuado em setores como <strong>varejo, fintech, turismo e marketing digital</strong>.</p>
+          <p>Sou um <strong>Senior Data Analytics Engineer</strong> com forte atuação na construção de camadas
+            analíticas (Silver/Gold), modelagem de dados e pipelines em ambientes Data Lake/Lakehouse.</p>
+          <p>Trabalho próximo ao negócio, com foco em <strong>confiabilidade, performance e governança de dados</strong>
+            — garantindo que os dados representem corretamente a realidade e suportem decisões estratégicas.</p>
+          <p>Minha trajetória combina domínio técnico em engenharia de dados com visão de produto e negócio, tendo
+            atuado em setores como <strong>varejo, fintech, turismo e marketing digital</strong>.</p>
           <div class="info-chips">
             <span class="chip"><i class="fas fa-map-marker-alt"></i> Brasil</span>
             <span class="chip"><i class="fas fa-language"></i> PT-BR Nativo · EN Full Professional</span>
@@ -265,7 +281,8 @@
             <div class="exp-summary-icon"><i class="fas fa-history"></i></div>
             <div>
               <h4>Experiências Anteriores</h4>
-              <p>Telemont, Endicon e outras — trajetória sólida em <strong>dashboards, Power BI, KPIs, ETL e governança de dados</strong>, mostrando evolução constante até engenharia de dados.</p>
+              <p>Telemont, Endicon e outras — trajetória sólida em <strong>dashboards, Power BI, KPIs, ETL e governança
+                  de dados</strong>, mostrando evolução constante até engenharia de dados.</p>
             </div>
           </div>
         </div>
@@ -380,7 +397,9 @@
             </div>
           </div>
           <h3>State of Data 2023 – Engenharia de Dados com Databricks</h3>
-          <p>Projeto de engenharia de dados aplicando boas práticas para estruturar e analisar os dados da pesquisa <strong>State of Data Brasil 2023</strong>, utilizando uma arquitetura em camadas (Bronze, Silver, Gold) no Databricks.</p>
+          <p>Projeto de engenharia de dados aplicando boas práticas para estruturar e analisar os dados da pesquisa
+            <strong>State of Data Brasil 2023</strong>, utilizando uma arquitetura em camadas (Bronze, Silver, Gold) no
+            Databricks.</p>
           <div class="projeto-layers">
             <div class="layer bronze">
               <span class="layer-label">🥉 Bronze</span>
@@ -517,7 +536,8 @@
       <div class="section-header">
         <span class="section-tag">06 / Contato</span>
         <h2 class="section-title">Vamos <span class="gradient-text">Conversar?</span></h2>
-        <p class="section-desc">Estou disponível para projetos de engenharia de dados, modernização de ambientes legados e construção de camadas analíticas e BI.</p>
+        <p class="section-desc">Estou disponível para projetos de engenharia de dados, modernização de ambientes legados
+          e construção de camadas analíticas e BI.</p>
       </div>
       <div class="contato-grid">
         <div class="contato-links">
@@ -568,4 +588,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
