@@ -57,3 +57,50 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
   });
 });
+
+// i18n Language Switcher
+const langBtns = document.querySelectorAll('.lang-btn');
+const defaultLang = localStorage.getItem('language') || 'pt';
+
+function setLanguage(lang) {
+  // Update active button
+  langBtns.forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+
+  // Save to localStorage
+  localStorage.setItem('language', lang);
+
+  // Apply translations
+  const langData = translations[lang];
+  if (!langData) return;
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const keyPath = el.getAttribute('data-i18n');
+    const keys = keyPath.split('.');
+    let value = langData;
+    keys.forEach(k => {
+      if (value) value = value[k];
+    });
+
+    if (value) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.setAttribute('placeholder', value);
+      } else {
+        el.innerHTML = value;
+      }
+    }
+  });
+}
+
+// Event Listeners
+langBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    setLanguage(btn.dataset.lang);
+  });
+});
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+  setLanguage(defaultLang);
+});

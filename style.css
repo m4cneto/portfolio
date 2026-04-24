@@ -203,3 +203,41 @@ nav.scrolled{background:rgba(10,10,15,.95);backdrop-filter:blur(20px);border-bot
   .nav-toggle{display:flex}
   .skills-grid{grid-template-columns:1fr}
 }
+
+/* Language Switcher */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  background: var(--bg-hover);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 0.15rem;
+  margin-left: 0.5rem;
+}
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.4rem 0.75rem;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.lang-btn:hover {
+  color: var(--text);
+}
+.lang-btn.active {
+  background: var(--bg-card);
+  color: var(--accent);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+@media(max-width:768px){
+  .lang-switcher {
+    margin: 1rem 1.5rem;
+    justify-content: center;
+  }
+}
