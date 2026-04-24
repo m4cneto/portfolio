@@ -60,7 +60,13 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 
 // i18n Language Switcher
 const langBtns = document.querySelectorAll('.lang-btn');
-const defaultLang = localStorage.getItem('language') || 'pt';
+let defaultLang = 'pt';
+
+try {
+  defaultLang = localStorage.getItem('language') || 'pt';
+} catch (e) {
+  console.warn("localStorage não disponível", e);
+}
 
 function setLanguage(lang) {
   // Update active button
@@ -69,9 +75,16 @@ function setLanguage(lang) {
   });
 
   // Save to localStorage
-  localStorage.setItem('language', lang);
+  try {
+    localStorage.setItem('language', lang);
+  } catch (e) { }
 
-  // Apply translations
+  // Apply translations (check if translations object exists)
+  if (typeof translations === 'undefined') {
+    console.error("Dicionário de traduções não carregado.");
+    return;
+  }
+
   const langData = translations[lang];
   if (!langData) return;
 
