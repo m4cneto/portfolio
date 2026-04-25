@@ -461,12 +461,36 @@
           </a>
         </div>
 
-        <div class="projeto-card coming-soon">
-          <div class="projeto-placeholder">
-            <i class="fas fa-stream"></i>
-            <h4 data-i18n="projects.pl1Title">Pipeline de Dados</h4>
-            <p data-i18n="projects.pl1Desc">Em breve — case de ingestão e transformação em Data Lakehouse</p>
+        <div class="projeto-card">
+          <div class="projeto-header">
+            <span class="projeto-emoji">🗄️</span>
+            <div class="projeto-meta">
+              <div class="projeto-tech-tags">
+                <span>PostgreSQL</span><span>SQL</span><span>DBeaver</span>
+              </div>
+            </div>
           </div>
+          <h3 data-i18n="projects.pl1Title">E-Commerce Pipeline – Arquitetura Medalhão no PostgreSQL</h3>
+          <p data-i18n="projects.pl1Desc">Projeto aplicando a arquitetura medalhão (Bronze, Silver, Gold) sobre um
+            conjunto de dados de e-commerce utilizando PostgreSQL para estruturação e análise.</p>
+          <div class="projeto-layers">
+            <div class="layer bronze">
+              <span class="layer-label">🥉 Bronze</span>
+              <span data-i18n="projects.pl1BronzeDesc">Ingestão de arquivos CSV brutos</span>
+            </div>
+            <div class="layer silver">
+              <span class="layer-label">🥈 Silver</span>
+              <span data-i18n="projects.pl1SilverDesc">Padronização relacional, tipagem e chaves</span>
+            </div>
+            <div class="layer gold">
+              <span class="layer-label">🥇 Gold</span>
+              <span data-i18n="projects.pl1GoldDesc">Modelagem analítica para KPIs e marts</span>
+            </div>
+          </div>
+          <a href="https://github.com/m4cneto/medallion-postgres-pipeline" target="_blank"
+            class="btn btn-primary btn-sm" data-i18n="projects.pl1Btn">
+            <i class="fab fa-github"></i> Ver no GitHub
+          </a>
         </div>
 
         <div class="projeto-card coming-soon">
