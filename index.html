@@ -6,14 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manoel Neto | Senior Analytics Engineer</title>
   <meta name="description"
-    content="Portfólio de Manoel Neto – Senior Analytics Engineer especializado em Databricks, Data Lakehouse, PySpark e Analytics." />
+    content="Portfólio de Manoel Neto – Analytics Engineer especializado em Databricks, dbt, Data Lakehouse, PySpark e qualidade de dados." />
+  <meta name="author" content="Manoel Neto" />
+  <link rel="canonical" href="https://m4cneto.github.io/portfolio/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Manoel Neto | Senior Analytics Engineer" />
+  <meta property="og:description"
+    content="Databricks, dbt e qualidade de dados: camadas analíticas confiáveis, diagnóstico de pipelines e observabilidade." />
+  <meta property="og:url" content="https://m4cneto.github.io/portfolio/" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%237c3aed'/%3E%3Ctext x='50' y='68' font-family='Inter,Arial,sans-serif' font-size='48' font-weight='700' fill='%23fff' text-anchor='middle'%3EMN%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css?v=1.1" />
+  <link rel="stylesheet" href="style.css?v=1.2" />
 </head>
 
 <body>
@@ -30,6 +40,7 @@
         <li><a href="#experiencia" data-i18n="nav.experience">Experiência</a></li>
         <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
         <li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
+        <li><a href="#servicos" data-i18n="nav.services">Serviços</a></li>
         <li><a href="#formacao" data-i18n="nav.education">Formação</a></li>
         <li><a href="#contato" class="nav-cta" data-i18n="nav.contact">Contato</a></li>
         <li class="lang-switcher">
@@ -51,11 +62,10 @@
             projetos</span></p>
         <h1 class="hero-name">Manoel <span class="gradient-text">Neto</span></h1>
         <h2 class="hero-title">Senior Analytics Engineer</h2>
-        <p class="hero-subtitle" data-i18n="hero.subtitle">Data Lakehouse &amp; Databricks Specialist</p>
-        <p class="hero-desc" data-i18n="hero.desc">Construo camadas analíticas escaláveis (Silver/Gold), modelos de
-          dados e pipelines em
-          ambientes Data Lake/Lakehouse para transformar dados em decisões estratégicas com confiabilidade e
-          performance.</p>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Databricks · dbt · Data Quality &amp; Observability</p>
+        <p class="hero-desc" data-i18n="hero.desc">Construo camadas analíticas escaláveis (Silver/Gold) em ambientes
+          Lakehouse — e entro onde o número não fecha: diagnóstico de pipelines, reconciliação entre camadas e root
+          cause analysis do dashboard até o sistema de origem.</p>
         <div class="hero-actions">
           <a href="#projetos" class="btn btn-primary" data-i18n="hero.btnProjects"><i class="fas fa-rocket"></i> Ver
             Projetos</a>
@@ -72,8 +82,8 @@
             <p data-i18n="hero.stat2">+40 relatórios migrados para arquitetura moderna (Databricks + Power BI)</p>
           </div>
           <div class="stat-card">
-            <i class="fas fa-chart-line stat-icon"></i>
-            <p data-i18n="hero.stat3">Aumento da confiabilidade e precisão dos KPIs estratégicos</p>
+            <i class="fas fa-magnifying-glass-chart stat-icon"></i>
+            <p data-i18n="hero.stat3">Root cause analysis end-to-end: do dashboard Power BI ao ERP de origem</p>
           </div>
         </div>
       </div>
@@ -134,9 +144,12 @@
           <p data-i18n="about.p2">Trabalho próximo ao negócio, com foco em <strong>confiabilidade, performance e
               governança de dados</strong>
             — garantindo que os dados representem corretamente a realidade e suportem decisões estratégicas.</p>
-          <p data-i18n="about.p3">Minha trajetória combina domínio técnico em engenharia de dados com visão de produto e
-            negócio, tendo
-            atuado em setores como <strong>varejo, fintech, turismo e marketing digital</strong>.</p>
+          <p data-i18n="about.p3">Hoje atuo em <strong>consultoria de Data &amp; AI</strong> para clientes globais,
+            combinando modelagem em <strong>dbt sobre Databricks</strong> com investigação de incidentes de dados
+            — transformando um "esse número está errado" em diagnóstico técnico acionável, com evidência em SQL.</p>
+          <p data-i18n="about.p4">Minha trajetória combina domínio técnico em engenharia de dados com visão de produto e
+            negócio, tendo atuado em setores como <strong>bens de consumo (CPG), varejo, fintech, turismo e marketing
+              digital</strong>.</p>
           <div class="info-chips">
             <span class="chip" data-i18n="about.chip1"><i class="fas fa-map-marker-alt"></i> Brasil</span>
             <span class="chip" data-i18n="about.chip2"><i class="fas fa-language"></i> PT-BR Nativo · EN Full
@@ -160,10 +173,17 @@
             </div>
           </div>
           <div class="highlight-item">
-            <div class="highlight-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+            <div class="highlight-icon"><i class="fas fa-clock-rotate-left"></i></div>
             <div>
-              <h4 data-i18n="about.hl3Title">Pipelines otimizados</h4>
-              <p data-i18n="about.hl3Desc">datasets analíticos com ganho de performance e escalabilidade</p>
+              <h4 data-i18n="about.hl3Title">+1 ano de backfill</h4>
+              <p data-i18n="about.hl3Desc">recuperado sem full refresh, protegendo ~80 campanhas em produção</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+            <div>
+              <h4 data-i18n="about.hl4Title">RCA end-to-end</h4>
+              <p data-i18n="about.hl4Desc">do dashboard Power BI ao ERP SAP BW, com evidência em SQL</p>
             </div>
           </div>
         </div>
@@ -187,6 +207,55 @@
             <div class="marker-line"></div>
           </div>
           <div class="exp-card current-job">
+            <div class="exp-header">
+              <div class="exp-company-info">
+                <div class="exp-logo indicium"><i class="fas fa-brain"></i></div>
+                <div>
+                  <h3>Indicium AI</h3>
+                  <span class="exp-role" data-i18n="experience.indiciumRole">Analytics Engineer</span>
+                </div>
+              </div>
+              <span class="exp-period" data-i18n="experience.indiciumPeriod">Mai 2026 – Presente</span>
+            </div>
+            <ul class="exp-bullets">
+              <li data-i18n="experience.indiciumBullet1">Consultoria de <strong>Data &amp; AI</strong> para clientes
+                globais — bebidas e bens de consumo (CPG), operação LATAM</li>
+              <li data-i18n="experience.indiciumBullet2">Arquitetura <strong>medallion completa (raw → bronze → silver →
+                  gold)</strong> no Databricks com <strong>dbt</strong>, orquestração via Azure Data Factory,
+                integração Salesforce e tratamento de dados sob LGPD</li>
+              <li data-i18n="experience.indiciumBullet3"><strong>Backfill histórico de +1 ano</strong> em pipeline que
+                só processava janela de 7 dias — ~26.500 registros validados e 45 modelos dbt mapeados</li>
+              <li data-i18n="experience.indiciumBullet4">Solução entregue como <strong>parâmetro configurável de janela
+                  incremental</strong>, evitando full refresh e protegendo ~80 campanhas em produção</li>
+              <li data-i18n="experience.indiciumBullet5">Correção de bugs críticos: seleção incorreta de arquivo na
+                ingestão, falha de <strong>CI/CD</strong> com risco de cruzar dados de dev e produção, e particionamento
+                quebrado por data fora do padrão ISO</li>
+              <li data-i18n="experience.indiciumBullet6"><strong>Root cause analysis</strong> de incidente crítico com
+                impacto direto na remuneração de vendedores — investigação end-to-end do modelo semântico Power BI (DAX)
+                → Power Query/M → camadas bronze/gold no Databricks → PySpark + ADF → DAGs Airflow → ERP SAP BW</li>
+              <li data-i18n="experience.indiciumBullet7">Reconciliação entre camada gold e dashboard Power BI com
+                validação em SQL de <strong>87 campanhas</strong> (zero duplicidade, zero órfãs) e identificação
+                proativa de 2 pontos de perda silenciosa de dados antes de chegarem à produção</li>
+            </ul>
+            <div class="exp-results">
+              <span class="result-tag" data-i18n="experience.indiciumRes1"><i class="fas fa-clock-rotate-left"></i> +1
+                ano de backfill</span>
+              <span class="result-tag" data-i18n="experience.indiciumRes2"><i class="fas fa-shield-halved"></i> ~80
+                campanhas protegidas</span>
+              <span class="result-tag" data-i18n="experience.indiciumRes3"><i class="fas fa-equals"></i> 87 campanhas
+                reconciliadas</span>
+              <span class="result-tag" data-i18n="experience.indiciumRes4"><i
+                  class="fas fa-magnifying-glass-chart"></i> RCA end-to-end</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="exp-card">
             <div class="exp-header">
               <div class="exp-company-info">
                 <div class="exp-logo allos"><i class="fas fa-store"></i></div>
@@ -331,16 +400,36 @@
           </div>
           <div class="skill-chips">
             <span class="skill-chip primary">Databricks</span>
+            <span class="skill-chip primary">dbt</span>
             <span class="skill-chip primary">PySpark</span>
             <span class="skill-chip primary">SparkSQL</span>
             <span class="skill-chip">Data Lake / Lakehouse</span>
-            <span class="skill-chip">Modelagem Silver / Gold</span>
+            <span class="skill-chip" data-i18n="skills.medallion">Arquitetura Medallion</span>
+            <span class="skill-chip">Unity Catalog</span>
             <span class="skill-chip">ETL / ELT</span>
             <span class="skill-chip">Airflow</span>
+            <span class="skill-chip">Azure Data Factory</span>
             <span class="skill-chip">Delta Lake</span>
             <span class="skill-chip">Git / GitLab</span>
+            <span class="skill-chip" data-i18n="skills.cicd">CI/CD para dados</span>
             <span class="skill-chip">Metadados / YAML</span>
             <span class="skill-chip" data-i18n="skills.gov">Governança de Dados</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-shield-halved"></i>
+            <h3 data-i18n="skills.cat6">Qualidade &amp; Observabilidade</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip primary" data-i18n="skills.dq">Data Quality</span>
+            <span class="skill-chip primary" data-i18n="skills.rca">Root Cause Analysis</span>
+            <span class="skill-chip">Data Lineage</span>
+            <span class="skill-chip" data-i18n="skills.recon">Reconciliação entre camadas</span>
+            <span class="skill-chip" data-i18n="skills.dbtTests">Testes dbt</span>
+            <span class="skill-chip" data-i18n="skills.incident">Incident Management</span>
+            <span class="skill-chip">LGPD</span>
           </div>
         </div>
 
@@ -365,8 +454,10 @@
           <div class="skill-chips">
             <span class="skill-chip primary">Power BI</span>
             <span class="skill-chip">DAX</span>
-            <span class="skill-chip">Power Query</span>
+            <span class="skill-chip" data-i18n="skills.semantic">Modelo Semântico</span>
+            <span class="skill-chip">Power Query / M</span>
             <span class="skill-chip">Power BI Service</span>
+            <span class="skill-chip">SAP BW</span>
             <span class="skill-chip">Metabase</span>
             <span class="skill-chip">QuickSight</span>
             <span class="skill-chip">SSRS</span>
@@ -380,9 +471,27 @@
             <h3 data-i18n="skills.cat4">Cloud &amp; Infra</h3>
           </div>
           <div class="skill-chips">
+            <span class="skill-chip primary">Azure</span>
             <span class="skill-chip primary">AWS</span>
+            <span class="skill-chip">Azure Data Factory</span>
             <span class="skill-chip">S3</span>
+            <span class="skill-chip">Docker</span>
             <span class="skill-chip">Data Lake AWS</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fas fa-robot"></i>
+            <h3 data-i18n="skills.cat7">IA Aplicada &amp; Produto</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="skill-chip primary">Anthropic API / LLMs</span>
+            <span class="skill-chip">Streamlit</span>
+            <span class="skill-chip">SQLAlchemy</span>
+            <span class="skill-chip">React + Vite</span>
+            <span class="skill-chip" data-i18n="skills.multitenant">Arquitetura multi-tenant</span>
+            <span class="skill-chip" data-i18n="skills.appsec">Segurança de aplicação</span>
           </div>
         </div>
 
@@ -413,6 +522,41 @@
 
         <div class="projeto-card featured">
           <div class="projeto-badge" data-i18n="projects.featured">⭐ Destaque</div>
+          <div class="projeto-header">
+            <span class="projeto-emoji">🛡️</span>
+            <div class="projeto-meta">
+              <div class="projeto-tech-tags">
+                <span>Python</span><span>Streamlit</span><span>SQLAlchemy</span><span>Docker</span>
+              </div>
+            </div>
+          </div>
+          <h3 data-i18n="projects.dqTitle">dq-monitor – SaaS de monitoramento de qualidade de dados</h3>
+          <p data-i18n="projects.dqDesc">MVP completo de um produto <strong>multi-tenant</strong> de monitoramento de
+            qualidade de dados para PMEs. Construído sobre uma premissa clara: <strong>nunca ser destrutivo ao banco do
+              cliente</strong> e minimizar dados por padrão.</p>
+          <div class="projeto-insights">
+            <h4 data-i18n="projects.dqFeatTitle">O que está implementado:</h4>
+            <ul>
+              <li data-i18n="projects.dqFeat1">12 tipos de check de qualidade</li>
+              <li data-i18n="projects.dqFeat2">Motor de scoring ponderado</li>
+              <li data-i18n="projects.dqFeat3">Guard de SQL baseado em AST</li>
+              <li data-i18n="projects.dqFeat4">Criptografia Fernet + autenticação Argon2id</li>
+              <li data-i18n="projects.dqFeat5">Proteção contra SSRF</li>
+              <li data-i18n="projects.dqFeat6">Log de auditoria append-only</li>
+              <li data-i18n="projects.dqFeat7">Arquitetura multi-tenant isolada</li>
+              <li data-i18n="projects.dqFeat8">Suíte de testes completa</li>
+            </ul>
+          </div>
+          <div class="projeto-stats">
+            <span data-i18n="projects.dqStats1"><i class="fas fa-flask"></i> MVP funcional</span>
+            <span data-i18n="projects.dqStats2"><i class="fas fa-robot"></i> Em avaliação: camada de agente/LLM</span>
+          </div>
+          <span class="projeto-status" data-i18n="projects.statusPrivate"><i class="fas fa-lock"></i> Repositório
+            privado — demo sob solicitação</span>
+        </div>
+
+        <div class="projeto-card featured">
+          <div class="projeto-badge" data-i18n="projects.oss">Open Source</div>
           <div class="projeto-header">
             <span class="projeto-emoji">📊</span>
             <div class="projeto-meta">
@@ -493,14 +637,85 @@
           </a>
         </div>
 
-        <div class="projeto-card coming-soon">
-          <div class="projeto-placeholder">
-            <i class="fas fa-chart-bar"></i>
-            <h4 data-i18n="projects.pl2Title">Dashboard Power BI</h4>
-            <p data-i18n="projects.pl2Desc">Em breve — relatório analítico com modelagem dimensional</p>
+        <div class="projeto-card">
+          <div class="projeto-header">
+            <span class="projeto-emoji">💸</span>
+            <div class="projeto-meta">
+              <div class="projeto-tech-tags">
+                <span>React</span><span>Vite</span><span>Anthropic API</span>
+              </div>
+            </div>
           </div>
+          <h3 data-i18n="projects.finTitle">Finanças Pessoais com IA</h3>
+          <p data-i18n="projects.finDesc">Mini-SaaS que ingere extratos bancários e de cartão e devolve gráficos
+            temporais, quebra por categoria e <strong>insights de gasto gerados por IA</strong>.</p>
+          <span class="projeto-status" data-i18n="projects.statusWip"><i class="fas fa-code"></i> Em
+            desenvolvimento</span>
         </div>
 
+        <div class="projeto-card">
+          <div class="projeto-header">
+            <span class="projeto-emoji">🚚</span>
+            <div class="projeto-meta">
+              <div class="projeto-tech-tags">
+                <span>HTML</span><span>CSS</span><span>UI/UX</span>
+              </div>
+            </div>
+          </div>
+          <h3 data-i18n="projects.siteTitle">Site Institucional – Rastreamento Veicular</h3>
+          <p data-i18n="projects.siteDesc">Redesign completo do site de uma empresa de rastreamento veicular, com foco
+            em clareza da proposta de valor e conversão.</p>
+          <span class="projeto-status" data-i18n="projects.statusDelivered"><i class="fas fa-check"></i> Entregue</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="section servicos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="services.tag">05 / Serviços</span>
+        <h2 class="section-title" data-i18n="services.title">Consultoria &amp; <span
+            class="gradient-text">Freelance</span></h2>
+        <p class="section-desc" data-i18n="services.desc">Atuo em projetos pontuais onde o dado precisa voltar a ser
+          confiável — do diagnóstico à entrega documentada.</p>
+      </div>
+      <div class="servicos-grid">
+
+        <div class="servico-card">
+          <div class="servico-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+          <h3 data-i18n="services.s1Title">Diagnóstico e correção de pipelines</h3>
+          <p data-i18n="services.s1Desc">Pipelines quebrados, divergência de números entre camadas, backfill histórico e
+            reprocessamento seguro sem full refresh.</p>
+        </div>
+
+        <div class="servico-card">
+          <div class="servico-icon"><i class="fas fa-satellite-dish"></i></div>
+          <h3 data-i18n="services.s2Title">Observabilidade e qualidade de dados</h3>
+          <p data-i18n="services.s2Desc">Implantação de checks, alertas e runbooks — para que a quebra apareça antes do
+            stakeholder.</p>
+        </div>
+
+        <div class="servico-card">
+          <div class="servico-icon"><i class="fas fa-layer-group"></i></div>
+          <h3 data-i18n="services.s3Title">Modelagem analítica em dbt sobre Databricks</h3>
+          <p data-i18n="services.s3Desc">Camadas silver/gold, modelos incrementais, testes, documentação e migração de
+            ambientes legados.</p>
+        </div>
+
+        <div class="servico-card">
+          <div class="servico-icon"><i class="fas fa-chart-pie"></i></div>
+          <h3 data-i18n="services.s4Title">Auditoria de Power BI</h3>
+          <p data-i18n="services.s4Desc">Revisão de modelo semântico, medidas DAX e dataflows Power Query/M, com
+            reconciliação contra a camada gold.</p>
+        </div>
+
+      </div>
+      <div class="servicos-cta">
+        <a href="#contato" class="btn btn-primary" data-i18n="services.cta"><i class="fas fa-comments"></i> Vamos
+          conversar sobre o seu caso</a>
       </div>
     </div>
   </section>
@@ -509,7 +724,7 @@
   <section id="formacao" class="section formacao">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag" data-i18n="education.tag">05 / Formação</span>
+        <span class="section-tag" data-i18n="education.tag">06 / Formação</span>
         <h2 class="section-title" data-i18n="education.title">Formação &amp; <span
             class="gradient-text">Certificações</span></h2>
       </div>
@@ -588,11 +803,10 @@
   <section id="contato" class="section contato">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag" data-i18n="contact.tag">06 / Contato</span>
+        <span class="section-tag" data-i18n="contact.tag">07 / Contato</span>
         <h2 class="section-title" data-i18n="contact.title">Vamos <span class="gradient-text">Conversar?</span></h2>
         <p class="section-desc" data-i18n="contact.desc">Estou disponível para projetos de engenharia de dados,
-          modernização de ambientes legados
-          e construção de camadas analíticas e BI.</p>
+          diagnóstico de pipelines, qualidade de dados e construção de camadas analíticas e BI.</p>
       </div>
       <div class="contato-grid">
         <div class="contato-links">
@@ -639,14 +853,14 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <p data-i18n="footer.p1">© 2025 Manoel Neto · Senior Analytics Engineer · Feito com <span class="heart">♥</span> e
+      <p data-i18n="footer.p1">© 2026 Manoel Neto · Senior Analytics Engineer · Feito com <span class="heart">♥</span> e
         muitos dados</p>
-      <p class="footer-sub" data-i18n="footer.p2">Databricks · PySpark · Delta Lake · Power BI</p>
+      <p class="footer-sub" data-i18n="footer.p2">Databricks · dbt · PySpark · Delta Lake · Power BI</p>
     </div>
   </footer>
 
-  <script src="translations.js?v=1.1"></script>
-  <script src="script.js?v=1.1"></script>
+  <script src="translations.js?v=1.2"></script>
+  <script src="script.js?v=1.2"></script>
 </body>
 
 </html>

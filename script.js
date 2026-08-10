@@ -74,6 +74,9 @@ function setLanguage(lang) {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
 
+  // Keep the document language in sync (acessibilidade / SEO)
+  document.documentElement.setAttribute('lang', lang === 'en' ? 'en' : 'pt-BR');
+
   // Save to localStorage
   try {
     localStorage.setItem('language', lang);

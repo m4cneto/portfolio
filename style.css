@@ -94,6 +94,7 @@ nav.scrolled{background:rgba(10,10,15,.95);backdrop-filter:blur(20px);border-bot
 .exp-header{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:1rem;flex-wrap:wrap}
 .exp-company-info{display:flex;align-items:center;gap:.85rem}
 .exp-logo{width:44px;height:44px;border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.exp-logo.indicium{background:rgba(124,58,237,.18);color:#a78bfa}
 .exp-logo.allos{background:rgba(239,68,68,.15);color:#ef4444}
 .exp-logo.dock{background:rgba(59,130,246,.15);color:#3b82f6}
 .exp-logo.cvc{background:rgba(16,185,129,.15);color:#10b981}
@@ -103,7 +104,7 @@ nav.scrolled{background:rgba(10,10,15,.95);backdrop-filter:blur(20px);border-bot
 .exp-period{font-size:.8rem;color:var(--muted);font-family:'JetBrains Mono',monospace;white-space:nowrap}
 .exp-bullets{list-style:none;display:flex;flex-direction:column;gap:.5rem;margin-bottom:1rem}
 .exp-bullets li{color:var(--muted);font-size:.88rem;padding-left:1rem;position:relative}
-.exp-bullets li::before{content:"?";position:absolute;left:0;color:var(--accent)}
+.exp-bullets li::before{content:"\25B8";position:absolute;left:0;color:var(--accent)}
 .exp-bullets strong{color:var(--text)}
 .exp-results{display:flex;flex-wrap:wrap;gap:.5rem}
 .result-tag{display:inline-flex;align-items:center;gap:.3rem;background:rgba(124,58,237,.1);border:1px solid rgba(124,58,237,.25);color:var(--accent);border-radius:99px;padding:.25rem .7rem;font-size:.78rem}
@@ -144,14 +145,19 @@ nav.scrolled{background:rgba(10,10,15,.95);backdrop-filter:blur(20px);border-bot
 .projeto-insights h4{font-size:.85rem;margin-bottom:.5rem}
 .projeto-insights ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.35rem;margin-bottom:1rem}
 .projeto-insights li{font-size:.82rem;color:var(--muted);padding-left:1rem;position:relative}
-.projeto-insights li::before{content:"?";position:absolute;left:0;color:var(--accent)}
+.projeto-insights li::before{content:"\25B8";position:absolute;left:0;color:var(--accent)}
 .projeto-stats{display:flex;gap:1.25rem;margin-bottom:1.25rem;flex-wrap:wrap}
 .projeto-stats span{display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;color:var(--muted)}
-.projeto-card.coming-soon{display:flex;align-items:center;justify-content:center;min-height:180px;border-style:dashed;opacity:.7}
-.projeto-placeholder{text-align:center;color:var(--muted)}
-.projeto-placeholder i{font-size:2rem;color:var(--accent);margin-bottom:.75rem;opacity:.5}
-.projeto-placeholder h4{font-size:.95rem;margin-bottom:.25rem}
-.projeto-placeholder p{font-size:.82rem}
+.projeto-status{display:inline-flex;align-items:center;gap:.4rem;background:var(--surface2);border:1px solid var(--border);border-radius:99px;padding:.3rem .85rem;font-size:.78rem;color:var(--muted)}
+.projeto-status i{color:var(--accent2);font-size:.72rem}
+.servicos{background:var(--bg3)}
+.servicos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem}
+.servico-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);padding:1.5rem;transition:all .3s}
+.servico-card:hover{border-color:rgba(124,58,237,.4);transform:translateY(-4px)}
+.servico-icon{width:44px;height:44px;background:rgba(124,58,237,.15);border-radius:var(--r);display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:1rem}
+.servico-card h3{font-size:1rem;margin-bottom:.5rem;line-height:1.4}
+.servico-card p{color:var(--muted);font-size:.86rem;line-height:1.7}
+.servicos-cta{display:flex;justify-content:center;margin-top:2.5rem}
 .formacao{background:var(--bg2)}
 .formacao-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
 .formacao-col-title{display:flex;align-items:center;gap:.6rem;font-size:1rem;margin-bottom:1.5rem;color:var(--text)}
@@ -208,7 +214,7 @@ nav.scrolled{background:rgba(10,10,15,.95);backdrop-filter:blur(20px);border-bot
 .lang-switcher {
   display: flex;
   align-items: center;
-  background: var(--bg-hover);
+  background: var(--surface2);
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 0.15rem;
@@ -217,7 +223,7 @@ nav.scrolled{background:rgba(10,10,15,.95);backdrop-filter:blur(20px);border-bot
 .lang-btn {
   background: transparent;
   border: none;
-  color: var(--text-muted);
+  color: var(--muted);
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.75rem;
   font-weight: 600;
@@ -230,7 +236,7 @@ nav.scrolled{background:rgba(10,10,15,.95);backdrop-filter:blur(20px);border-bot
   color: var(--text);
 }
 .lang-btn.active {
-  background: var(--bg-card);
+  background: var(--surface);
   color: var(--accent);
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
